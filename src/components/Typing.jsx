@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-
+import { motion } from "motion/react";
 export const Typing = ({ rawText }) => {
   const [text, setText] = useState(""); // Teks yang sedang diketik
   const [currentChar, setCurrentChar] = useState(""); // Karakter aktif
   const [isTyping, setIsTyping] = useState(true); // Status animasi mengetik
-  const typingSpeed = 100; // Kecepatan mengetik dalam ms
+  const typingSpeed = 50; // Kecepatan mengetik dalam ms
   const charDelay = 50; // Delay per karakter untuk smooth effect
 
   useEffect(() => {
@@ -37,16 +37,21 @@ export const Typing = ({ rawText }) => {
     type();
 
     // Bersihkan timeout saat komponen di-unmount
-    return () => clearTimeout(timeout);
+    return () => {
+      return clearTimeout(timeout);
+    };
   }, [rawText]);
 
   return (
-    <div className="text-left font-semibold text-white">
+    <motion.div
+      animate={{ x: 10 }}
+      className="text-left font-semibold text-white"
+    >
       <span>{text}</span>
-      <span className="text-lime-dark">{currentChar}</span>
+      <span className="text-red">{currentChar}</span>
       {isTyping && (
-        <span className="inline-block w-2 h-7 border-r-2 border-white animate-blink"></span>
+        <span className="h-7 border-r-2 border-white animate-blink"></span>
       )}
-    </div>
+    </motion.div>
   );
 };
