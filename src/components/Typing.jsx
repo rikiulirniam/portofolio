@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
-export const Typing = ({ rawText }) => {
+export const Typing = ({ rawText, underlined = "" }) => {
   const [text, setText] = useState(""); // Teks yang sedang diketik
   const [currentChar, setCurrentChar] = useState(""); // Karakter aktif
   const [isTyping, setIsTyping] = useState(true); // Status animasi mengetik
@@ -48,7 +48,9 @@ export const Typing = ({ rawText }) => {
       className="text-left font-semibold text-white"
     >
       <span>{text}</span>
-      <span className="text-red">{currentChar}</span>
+      <span className="text-red">
+        {currentChar}
+      </span>
       {isTyping && (
         <span className="h-7 border-r-2 border-white animate-blink"></span>
       )}
