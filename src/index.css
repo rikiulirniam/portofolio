@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 /* styles.css */
+*{
+    /* border: greenyellow solid 1px; */
+}

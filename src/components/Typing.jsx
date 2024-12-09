@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
-export const Typing = ({ rawText, underlined = "" }) => {
+export const Typing = ({
+  rawText,
+  cursorColor = "white",
+  textColor = "white",
+  blinkColor = "red",
+}) => {
   const [text, setText] = useState(""); // Teks yang sedang diketik
   const [currentChar, setCurrentChar] = useState(""); // Karakter aktif
   const [isTyping, setIsTyping] = useState(true); // Status animasi mengetik
@@ -45,14 +50,14 @@ export const Typing = ({ rawText, underlined = "" }) => {
   return (
     <motion.div
       animate={{ x: 10 }}
-      className="text-left font-semibold text-white"
+      className={"text-left font-semibold text-" + textColor}
     >
       <span>{text}</span>
-      <span className="text-red">
-        {currentChar}
-      </span>
+      <span className={`text-${blinkColor}`}>{currentChar}</span>
       {isTyping && (
-        <span className="h-7 border-r-2 border-white animate-blink"></span>
+        <span
+          className={`h-7 border-r-2 border-${cursorColor} animate-blink`}
+        ></span>
       )}
     </motion.div>
   );
