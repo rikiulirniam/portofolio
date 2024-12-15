@@ -4,7 +4,6 @@ export const Typing = ({
   rawText,
   cursorColor = "white",
   textColor = "white",
-  blinkColor = "red",
 }) => {
   const [text, setText] = useState(""); // Teks yang sedang diketik
   const [currentChar, setCurrentChar] = useState(""); // Karakter aktif
@@ -47,13 +46,17 @@ export const Typing = ({
     };
   }, [rawText]);
 
+  useEffect(() => {
+
+  }, []);
+
   return (
     <motion.div
       animate={{ x: 10 }}
       className={"text-left font-semibold text-" + textColor}
     >
       <span>{text}</span>
-      <span className={`text-${blinkColor}`}>{currentChar}</span>
+      <span className={`text-red dark:text-red`}>{currentChar}</span>
       {isTyping && (
         <span
           className={`h-7 border-r-2 border-${cursorColor} animate-blink`}
