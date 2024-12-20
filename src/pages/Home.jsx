@@ -52,11 +52,17 @@ export const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col bg-white dark:bg-black items-center">
-        <Navbar />
-
+      <Navbar />
+      <div className="flex flex-col items-center">
+        <div
+          className="bg fixed -z-10 w-screen h-screen"
+          style={{
+            background:
+              "linear-gradient(to bottom left,  rgba(1,2,2,0.8), rgba(0,0,0,0.9), black)",
+          }}
+        ></div>
         <main className="bg-transparent container min-h-screen w-full flex flex-col justify-center align-middle">
-          <div className="hero-section h-screen w-full flex items-center justify-center  bg-black">
+          <div className="hero-section h-screen w-full flex items-center justify-center  bg-transparent">
             <div className="intro w-1/2 flex flex-col justify-center  ">
               <div className="intro-content w-4/5 flex flex-col justify-center ">
                 <h1 className="text-5xl font-mono">
@@ -107,12 +113,13 @@ export const Home = () => {
             </div>
 
             <div className="img-profile w-1/2 flex items-center justify-end">
-            <div className="home-img w-3/5 rounded-full transition-all duration-300 hover:rounded-none overflow-hidden relative group"
-              style={{ clipPath: '' }}
-            >
-            {/* Gambar default */}
+              <div
+                className="home-img w-3/5 rounded-full transition-all duration-300 hover:overflow-visible overflow-hidden relative group"
+                style={{ clipPath: "" }}
+              >
+                {/* Gambar default */}
                 <img
-                  src="./images/riki1.jpg"
+                  src="./images/riki1.png"
                   className="w-full h-full object-cover transition-opacity duration-300 ease-in-out"
                   alt="default"
                 />
@@ -120,10 +127,10 @@ export const Home = () => {
                 <motion.img
                   whileHover={{
                     opacity: 1,
-                    scale: 1.2,
+                    scale: 1.1,
                     // transition: { duration: 100 },
                   }}
-                  src="./images/riki1.png"
+                  src="./images/riki2.png"
                   className="w-full h-full object-cover absolute top-0 left-0 opacity-0"
                   alt="hovered"
                 />
