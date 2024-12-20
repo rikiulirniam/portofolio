@@ -46,9 +46,7 @@ export const Typing = ({
     };
   }, [rawText]);
 
-  useEffect(() => {
-
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <motion.div
@@ -56,7 +54,7 @@ export const Typing = ({
       className={"text-left font-semibold text-" + textColor}
     >
       <span>{text}</span>
-      <span className={`text-red dark:text-red`}>{currentChar}</span>
+      <span className={`text-red `}>{currentChar}</span>
       {isTyping && (
         <span
           className={`h-7 border-r-2 border-${cursorColor} animate-blink`}
