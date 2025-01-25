@@ -151,22 +151,20 @@ export const Home = () => {
         <section className="bg-transparent container h-[70vh]  w-full">
           <h1 className="text-4xl font-bold  text-center">Skills</h1>
           <div className="flex items-center justify-center  w-full h-[50vh]">
-            <FallingText    
-              text={` HTML CSS JavaScript React Website Laravel Sanctum TailwindCSS Node.js Git API Integration Responsive`}
+            <FallingText
+              text={` Website HTML CSS JavaScript Full-Stack React API Integration Laravel Sanctum TailwindCSS Git Responsive`}
               highlightWords={[
-                "JavaScript",  // Menyoroti keahlian dalam JavaScript
-                "React",  // Menyoroti keahlian dalam React
-                "Web Development",  // Menyoroti bidang keahlian Anda
-                "UI/UX Design",  // Menyoroti keahlian dalam desain antarmuka dan pengalaman pengguna
-                "HTML",  // Menyoroti keahlian dalam HTML
-                "CSS",  // Menyoroti keahlian dalam CSS
-                "TailwindCSS",  // Menyoroti keahlian dalam TailwindCSS
-                "Node.js",  // Menyoroti keahlian dalam Node.js
-                "Git",  // Menyoroti keahlian dalam Git
-                "API Integration",  // Menyoroti keahlian dalam integrasi API
-                "Responsive Design",  // Menyoroti keahlian dalam desain responsif
+                "JavaScript", // Menyoroti keahlian dalam JavaScript
+                "React", // Menyoroti keahlian dalam React
+                "Laravel", // Menyoroti keahlian dalam desain antarmuka dan pengalaman pengguna
+                "HTML", // Menyoroti keahlian dalam HTML
+                "CSS", // Menyoroti keahlian dalam CSS
+                "TailwindCSS", // Menyoroti keahlian dalam TailwindCSS
+                "Git", // Menyoroti keahlian dalam Git
+                "Sanctum", // Menyoroti keahlian dalam integrasi API
+                "Responsive Design", // Menyoroti keahlian dalam desain responsif
               ]}
-              highlightClass="text-red"
+              highlightClass="text-red font-bold"
               trigger="scroll"
               backgroundColor="transparent"
               wireframes={false}
