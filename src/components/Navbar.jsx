@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className="nav-content flex items-center justify-between container">
         <div className="flex flex-col justify-center ">
           <h1 className=" flex items-center justify-center text-white text-xl font-mono font-bold">
-            <span>
+            <span className="pe-5">
               <DecryptedText
                 text="Riki"
                 animateOn="hover"
@@ -29,14 +29,18 @@ export const Navbar = () => {
                 maxIterations={50}
                 // sequential={true}
               />
-              
             </span>
           </h1>
         </div>
         <div className="flex items-center justify-center gap-6 font-mono px-4">
+          <span className=" text-sm font-bold place-items-center border-b-2 ">
+            <a href="#" className="text-white">
+              About Me
+            </a>
+          </span>
           <span className=" text-sm font-bold place-items-center">
             <a href="#" className="text-white">
-              Home
+              Projects{" "}
             </a>
           </span>
           <span className=" text-sm font-bold place-items-center">
@@ -45,28 +49,28 @@ export const Navbar = () => {
             </a>
           </span>
         </div>
-        <div className="social flex items-center gap-5 text-white">
+        <div className="social flex items-center gap-2 text-white">
           <a
             href="rikiulir@gmail.com"
-            className="saturate-0 hover:saturate-100 cursor-pointer w-6 "
+            className="saturate-0 hover:saturate-100 cursor-pointer w-5 "
           >
             <img src="./images/social/linkedin.png" alt="linkedin" />
           </a>
           <a
             href=""
-            className="saturate-0 hover:saturate-100 cursor-pointer w-6 "
+            className="saturate-0 hover:saturate-100 cursor-pointer w-5 "
           >
             <img src="./images/social/instagram.png" alt="instagram" />
           </a>
           <a
             href=""
-            className="saturate-0 hover:saturate-100 cursor-pointer w-6 "
+            className="saturate-0 hover:saturate-100 cursor-pointer w-5 "
           >
             <img src="./images/social/email.png" alt="email" />
           </a>
           <a
             href=""
-            className="saturate-0 hover:saturate-100 cursor-pointer w-6 "
+            className="saturate-0 hover:saturate-100 cursor-pointer w-5 "
           >
             <img src="./images/social/github.png" alt="github" />
           </a>
