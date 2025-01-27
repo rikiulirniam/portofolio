@@ -7,6 +7,7 @@ import { Navbar } from "../components/Navbar";
 import DecryptedText from "../components/DecryptedText/DecryptedText";
 import FallingText from "../components/FallingText/FallingText";
 import Squares from "../components/Squares/Squares";
+import BlurText from "../components/BlurText/BlurText";
 
 export const Home = () => {
   function handleDownloadCV() {
@@ -69,8 +70,8 @@ export const Home = () => {
         <div className="hero-section h-screen w-full flex items-center justify-center  bg-transparent">
           <div className="intro w-1/2 flex flex-col justify-center items-center text-center">
             <div className="intro-content w-4/5 flex flex-col justify-center w-full">
-              <h1 className="text-6xl w-full">
-                <DecryptedText
+              <h1 className="text-6xl flex justify-center w-full">
+                {/* <DecryptedText
                   text="Hello, I am Riki"
                   animateOn="view"
                   revealDirection="start"
@@ -80,6 +81,13 @@ export const Home = () => {
                   speed={60}
                   maxIterations={100}
                   sequential={true}
+                /> */}
+                <BlurText
+                  text="Hello, I'm Riki"
+                  delay={150}
+                  animateBy="words"
+                  direction="top"
+                  className="text-white text-center font-dm font-bold"
                 />
               </h1>
 
