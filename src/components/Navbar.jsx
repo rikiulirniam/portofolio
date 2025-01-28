@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import DecryptedText from "./DecryptedText/DecryptedText";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -15,9 +16,9 @@ export const Navbar = () => {
       }
     >
       <div className="nav-content flex items-center justify-between container">
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center items-center">
           <h1 className=" flex items-center justify-center text-white text-xl font-mono font-bold">
-            <span className="pe-5">
+            <span className=" w-32 h-[1rem] flex items-center overflow-hidden">
               <DecryptedText
                 text="Riki"
                 animateOn="hover"
@@ -33,20 +34,34 @@ export const Navbar = () => {
           </h1>
         </div>
         <div className="flex items-center justify-center gap-6 font-mono px-4">
-          <span className=" text-sm font-bold place-items-center border-b-2 ">
-            <a href="#" className="text-white">
+          <span
+            className={
+              " text-sm font-bold place-items-center " +
+              (window.location.pathname.includes("/aboutme")
+                ? "border-b-2"
+                : "")
+            }
+          >
+            <Link to="/aboutme" className="text-white">
               About Me
-            </a>
+            </Link>
           </span>
-          <span className=" text-sm font-bold place-items-center">
-            <a href="#" className="text-white">
+          <span className={
+              " text-sm font-bold place-items-center " +
+              (window.location.pathname.includes("/projects")
+                ? "border-b-2"
+                : "")
+            }>
+            <Link to="/projects" className="text-white">
               Projects{" "}
-            </a>
+            </Link>
           </span>
-          <span className=" text-sm font-bold place-items-center">
-            <a href="#" className="text-white">
+          <span className={" text-sm font-bold place-items-center" +(window.location.pathname.includes("/contact")
+                ? "border-b-2"
+                : "") }>
+            <Link to="/contact" className="text-white">
               Contact
-            </a>
+            </Link>
           </span>
         </div>
         <div className="social flex items-center gap-2 text-white">
