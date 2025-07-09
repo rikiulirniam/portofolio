@@ -1,0 +1,26 @@
+{
+    "nama" : "Riki Ulir Niam",
+    "nama_panggilan" : "Riki",
+    "teknologi" : [
+        {
+            "name" : "Laravel",
+            "icon" : "icons/laravel.svg",
+            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+        },
+        {
+            "name" : "Express",
+            "icon" : "icons/express.svg",
+            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+        },
+        {
+            "name" : "React",
+            "icon" : "icons/react.svg",
+            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+        },
+        {
+            "name" : "TailwindCSS",
+            "icon" : "icons/tailwindcss.svg",
+            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+        }
+    ]
+}
