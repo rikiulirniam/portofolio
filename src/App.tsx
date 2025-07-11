@@ -20,19 +20,21 @@ function App() {
                 </a>
 
               </div>
-              <img src="./riki.png" className='h-full  self-end ' alt="riki" />
+              <img src="./riki.png" className='h-full px-10 self-end ' alt="riki" />
           </section>
-          <section  id='next' className='flex justify-center flex-col-reverse md:flex-row items-center bg-[black] text-white'>
-            <div className="flex py-14 gap-4">
+          <section  id='next' className='flex justify-center flex-col items-center bg-[black] text-white'>
+              <h1 className='pt-12 pb-6 font-semibold text-3xl underline'>Tech Stack</h1>
+            <div className="flex justify-center flex-wrap pb-14 gap-4">
             {data && data.teknologi.map((item) => (
 
-              <div className="flex items-center border border-white w-80" >
-                <div className="flex items-center p-5">
-                  <img src={item.icon} width={50} alt="laravel" className='text-white' /> 
+              <div className="flex flex-col  border- p-5 w-72 " >
+                <div className="flex items-center pb-2">
+                  <img src={item.icon} width={35} alt="laravel" className='text-white' /> 
                   <h2 className='text-xl font-medium px-4'>
                     {item.name}
                   </h2>
                 </div>
+                  <p className=''>{item.text}</p>
               </div>
               ))}
             </div>
