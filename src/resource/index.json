@@ -5,22 +5,22 @@
         {
             "name" : "Laravel",
             "icon" : "icons/laravel.svg",
-            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+            "text" : "Membuat Web Application menggunakan Blade atau membuat RestAPI dengan Sanctum.    "
         },
         {
             "name" : "Express",
             "icon" : "icons/express.svg",
-            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+            "text" : "Membuat RestAPI dengan perfoma yang lebih cepat dan mengikuti lingkungan Node.Js."
         },
         {
             "name" : "React",
             "icon" : "icons/react.svg",
-            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+            "text" : "Membangun antarmuka dinamis dan interaktif untuk pengalaman pengguna yang lebih efisien dari sisi frontend."
         },
         {
-            "name" : "TailwindCSS",
-            "icon" : "icons/tailwindcss.svg",
-            "text" : "Membuat Web Application dengan Blade atau membuat RestAPI dengan Sanctum sebagai backend menggunakan framework Laravel."
+            "name" : "PostgreSQL",
+            "icon" : "icons/postgresql.svg",
+            "text" : "Mengelola data relasional dan query kompleks dengan performa yang lebih cepat."
         }
     ]
 }
