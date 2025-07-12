@@ -1,8 +1,15 @@
 import React, { useEffect } from 'react'
 import './App.css'
 import data from "./resource/index.json"
+import Stack from './Stack/Stack';
+import useWindowSize from './resource/Provider';
 
 function App() {
+
+  const [width] = useWindowSize();
+  const cardWidth = width < 768 ? 300 : 500
+  const cardHeight = width < 768 ? 200 : 350
+  
   useEffect(() => {
   }, [])
   return (
@@ -22,8 +29,8 @@ function App() {
               </div>
               <img src="./riki.png" className='h-full px-10 self-end ' alt="riki" />
           </section>
-          <section  id='next' className='flex justify-center flex-col items-center bg-[black] text-white'>
-              <h1 className='pt-12 pb-6 font-semibold text-3xl underline'>Tech Stack</h1>
+          <section  id='techstack' className='flex justify-center flex-col items-center bg-[black] text-white'>
+              <h1 className='pt-12 pb-2 font-semibold text-3xl underline'>Tech Stack</h1>
             <div className="flex justify-center flex-wrap pb-14 gap-4">
             {data && data.teknologi.map((item) => (
 
@@ -34,10 +41,28 @@ function App() {
                     {item.name}
                   </h2>
                 </div>
-                  <p className=''>{item.text}</p>
+                  <p className='text-[grey]'>{item.text}</p>
               </div>
               ))}
             </div>
+          </section>
+          <section id='aboutme' className='bg-[black] pt-10 flex flex-col items-center justify-center'>
+              <div className="flex flex-wrap justify-center ">
+                <div className="img-container pe-6 max-w-screen">
+                  <Stack
+                    randomRotation={true}
+                    sensitivity={180}
+                    sendToBackOnClick={false}
+                    cardDimensions={{ width: cardWidth, height: cardHeight }}
+                    cardsData={data.images}
+                  />
+                </div>
+                <div className="aboutme-text-container md:w-[40rem] w-[28rem] text-white px-24">
+                  <h1 className='text-6xl font-semibold py-6'>About Me</h1>
+                  <p className='pb-4  font-medium text-[1.1em]'>{data.about.subheading}</p>
+                    <p className='text-[#a0a0a0] text-justify pb-2'>{data.about.text}</p>
+                </div>
+              </div>
           </section>
         </div>
     </React.Fragment>

@@ -22,5 +22,14 @@
             "icon" : "icons/postgresql.svg",
             "text" : "Mengelola data relasional dan query kompleks dengan performa yang lebih cepat."
         }
-    ]
+    ],
+    "images" : [
+        {"id" : 2 , "img" : "./aboutme/aboutme2.jpg"},
+        {"id" : 3 , "img" : "./aboutme/aboutme3.jpg"},
+        {"id" : 1 , "img" : "./aboutme/aboutme2.jpeg"}
+    ], 
+    "about": {
+        "subheading" : "Peraih mimpi bermodalkan ambisi -", 
+        "text" : "Saya adalah seseorang yang tumbuh dari keluarga nelayan di desa kecil, dengan tekad kuat untuk mengubah nasib dan mengangkat derajat orang tua di mata masyarakat. Ketertarikan saya pada dunia teknologi berawal dari rasa ingin tahu dan keinginan untuk menciptakan sesuatu yang bermanfaat. Sejak itu, saya terus belajar, mencoba, dan membangun hal-hal kecil dengan harapan suatu hari bisa membawa perubahan besar—baik untuk diri saya sendiri, keluarga, maupun lingkungan sekitar."
+    }
 }
