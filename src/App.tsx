@@ -46,8 +46,8 @@ function App() {
               ))}
             </div>
           </section>
-          <section id='aboutme' className='bg-[black] pt-10 flex flex-col items-center justify-center'>
-              <div className="flex flex-wrap justify-center ">
+          <section id='aboutme' className='bg-[white] py-10 flex flex-col items-center justify-center '>
+              <div className="flex items-center justify-center flex-col md:flex-row">
                 <div className="img-container pe-6 max-w-screen">
                   <Stack
                     randomRotation={true}
@@ -57,12 +57,35 @@ function App() {
                     cardsData={data.images}
                   />
                 </div>
-                <div className="aboutme-text-container md:w-[40rem] w-[28rem] text-white px-24">
-                  <h1 className='text-6xl font-semibold py-6'>About Me</h1>
+                <div className="aboutme-text-container md:w-[44rem] w-[26rem] text-black px-24">
+                  <h1 className='md:text-6xl text-4xl font-bold py-4'>About Me</h1>
                   <p className='pb-4  font-medium text-[1.1em]'>{data.about.subheading}</p>
-                    <p className='text-[#a0a0a0] text-justify pb-2'>{data.about.text}</p>
+                    <p className='text-[#a0a0a0] text- pb-6'>{data.about.text}</p>
+                    <a href='#next' className="p-3 px-5 font-reguler border-2 border-black
+                      transition-all duration-300 ease-in-out cursor-pointer
+                      hover:delay-150 hover:bg-black hover:text-white hover:opacity-80">
+                      Download CV
+                    </a>
+
                 </div>
               </div>
+          </section>
+          <section  id='techstack' className='flex justify-center flex-col items-center bg-[#ffffff] text-black'>
+            <div className="flex justify-center flex-wrap pb-12 gap-4">
+            {data && data.pengalaman.map((item) => (
+
+              <div className="flex flex-col  border- p-5 w-72 " >
+                <p className='text-[0.8em] font-medium'>{item.tag}</p>
+                <div className="flex items-center py-2">
+                  <h2 className='text-5xl font-bold text-[#464646ab] '>
+                    {item.year}
+                  </h2>
+                </div>
+                  <p className='pb-4  font-medium text-[1em]'>{item.subheading}</p>
+                  <p className='text-[grey] text-[0.9em]'>{item.text}</p>
+              </div>
+              ))}
+            </div>
           </section>
         </div>
     </React.Fragment>

@@ -30,6 +30,32 @@
     ], 
     "about": {
         "subheading" : "Peraih mimpi bermodalkan ambisi -", 
-        "text" : "Saya adalah seseorang yang tumbuh dari keluarga nelayan di desa kecil, dengan tekad kuat untuk mengubah nasib dan mengangkat derajat orang tua di mata masyarakat. Ketertarikan saya pada dunia teknologi berawal dari rasa ingin tahu dan keinginan untuk menciptakan sesuatu yang bermanfaat. Sejak itu, saya terus belajar, mencoba, dan membangun hal-hal kecil dengan harapan suatu hari bisa membawa perubahan besar—baik untuk diri saya sendiri, keluarga, maupun lingkungan sekitar."
-    }
+        "text" : "Saya adalah seseorang yang tumbuh dari keluarga nelayan di desa kecil, dengan tekad kuat untuk mengubah nasib dan mengangkat derajat orang tua di mata masyarakat. Ketertarikan saya pada dunia teknologi berawal dari rasa ingin tahu dan keinginan untuk menciptakan sesuatu yang bermanfaat. "
+    },
+    "pengalaman" : [
+        {
+            "tag" : "01 \\ EDUCATION",
+            "year" : "2022",
+            "subheading" : "Computer Science Vocational Highschool -",
+            "text" :"Pendidikan terakhir saya adalah dari jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT) di SMK Tunas Harapan Pati"
+        },
+        {
+            "tag" : "02 \\ FIRST JOB",
+            "year" : "2024",
+            "subheading" : "Junior Developer Internship",
+            "text" :"Pengalaman kerja pertama saya adalah menjadi Junior Developer Internship di PT DES Teknologi Informasi, Semarang"
+        },
+        {
+            "tag" : "03 \\ UPGRADE",
+            "year" : "2025",
+            "subheading" : "Started Freelancing with Teams",
+            "text" :"Setelah lulus dari SMK, saya membuat tim developer dan mengerjakan project freelance dari pelanggan corporate maupun private"
+        },
+        {
+            "tag" : "04 \\ AWARDS",
+            "year" : "2024",
+            "subheading" : "The Best in Web Development ",
+            "text" :"Menjadi Juara 1 tingkat Kabupaten/Kota dan Juara 3 tingkat Provinsi Jawa Tengah di Lomba Kompetensi Siswa bidang Web Technologies"
+        }
+    ]
 }
