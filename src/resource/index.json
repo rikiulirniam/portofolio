@@ -57,5 +57,26 @@
             "subheading" : "The Best in Web Development ",
             "text" :"Menjadi Juara 1 tingkat Kabupaten/Kota dan Juara 3 tingkat Provinsi Jawa Tengah di Lomba Kompetensi Siswa bidang Web Technologies"
         }
+    ],
+    "contactme" : [
+        {
+            "img" : "icons/gmail.svg",
+            "slogan" : "Write Me -",
+            "content" : "rikiulir@gmail.com",
+            "direct" : "mailto:rikiulir@gmail.com"
+        },
+        {
+            "img" : "icons/whatsapp.svg",
+            "slogan" : "Chat Me -",
+            "content" : "+6281215167617",
+            "direct" : "https://wa.me/+6281215167617"
+        },
+        {
+            "img" : "icons/linkedin.svg",
+            "slogan" : "Find Me -",
+            "content" : "https://www.linkedin.com/in/riki-ulir-niam"
+        }
+
+
     ]
 }
