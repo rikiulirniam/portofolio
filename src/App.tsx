@@ -3,6 +3,7 @@ import './App.css'
 import data from "./resource/index.json"
 import Stack from './Stack/Stack';
 import useWindowSize from './resource/Provider';
+import TechStack from './components/TechStack';
 
 function App() {
 
@@ -14,8 +15,10 @@ function App() {
   }, [])
   return (
     <React.Fragment>
-      <div className="vw-100 bg-[#151424] scroll-smooth delay-300  ">
-
+      <div className="vw-100 bg-[white] scroll-smooth delay-300  ">
+          {/* <nav className=' sticky top-0 left-0 bg-transparent z-10'>
+            ALKJSDHLKJAGHSDLKJGHALKSHJDLJHASGDLJHAGSDLhj
+          </nav> */}
           <section className="flex justify-center flex-col-reverse md:flex-row items-center " style={{background : "linear-gradient(to right, #9da0a7, #988e8c,rgb(206, 182, 177) )"}}>
               <div className="flex flex-col items-start gap-5 px-4 py-10">
                 <h1 className="font-bold text-6xl">Hello, I'm {data.nama_panggilan}!</h1>
@@ -29,7 +32,7 @@ function App() {
               </div>
               <img src="./riki.png" className='h-full px-10 self-end ' alt="riki" />
           </section>
-          <section  id='techstack' className='flex justify-center flex-col items-center bg-[black] text-white'>
+          {/* <section  id='techstack' className='flex justify-center flex-col items-center bg-[black] text-white'>
               <h1 className='pt-12 pb-2 font-semibold text-3xl underline'>Tech Stack</h1>
             <div className="flex justify-center flex-wrap pb-14 gap-4">
             {data && data.teknologi.map((item) => (
@@ -45,8 +48,9 @@ function App() {
               </div>
               ))}
             </div>
-          </section>
-          <section id='aboutme' className='bg-[white] py-10 flex flex-col items-center justify-center '>
+          </section> */}
+          <TechStack />
+          <section id='aboutme' className=' bg-gray-50 py-10 flex flex-col items-center justify-center '>
               <div className="flex items-center justify-center flex-col md:flex-row">
                 <div className="img-container pe-6 max-w-screen">
                   <Stack
@@ -57,11 +61,11 @@ function App() {
                     cardsData={data.images}
                   />
                 </div>
-                <div className="aboutme-text-container md:w-[44rem] w-[26rem] text-black px-24">
+                <div className="aboutme-text-container md:w-[44rem] w-[auto] text-black md:px-8 px-[10%]">
                   <h1 className='md:text-6xl text-4xl font-bold py-4'>About Me</h1>
                   <p className='pb-4  font-medium text-[1.1em]'>{data.about.subheading}</p>
                     <p className='text-[#a0a0a0] text- pb-6'>{data.about.text}</p>
-                    <a href='#next' className="p-3 px-5 font-reguler border-2 border-black
+                    <a href='/public/Web Developer - Riki Ulir Niam.pdf' className="p-3 px-5 font-reguler border-2 border-black
                       transition-all duration-300 ease-in-out cursor-pointer
                       hover:delay-150 hover:bg-black hover:text-white hover:opacity-80">
                       Download CV
@@ -70,8 +74,8 @@ function App() {
                 </div>
               </div>
           </section>
-          <section  id='techstack' className='flex justify-center flex-col items-center bg-[#ffffff] text-black'>
-            <div className="flex justify-center flex-wrap pb-12 gap-4">
+          <section  id='timeline' className='flex justify-center flex-col items-center bg-[#ffffff] text-black'>
+            <div className="flex justify-center flex-wrap py-8 gap-4">
             {data && data.pengalaman.map((item) => (
 
               <div className="flex flex-col  border- p-5 w-72 " >
@@ -87,6 +91,14 @@ function App() {
               ))}
             </div>
           </section>
+          {/* <section id='contactme' className='flex justify-center max-w-screen flex-col items-center bg-[#ffffff] text-black'>
+              <figure className='w-6xl h-[500px] flex flex-col justify-center bg-[grey] p-4'>
+                <h1 className='text-6xl font-bold'>Contact me</h1>
+                <p className="font-semibold ">
+                  Hire Me for Your Project
+                </p>
+              </figure>
+          </section> */}
         </div>
     </React.Fragment>
   )
