@@ -90,7 +90,7 @@ function App() {
                 <div className="flex md:flex-nowrap flex-wrap">
                   {data && data.contactme.map((item, key) => (
 
-                    <div className='flex flex-col md:w-96 w-[80%] py-4 md:gap-6 gap-5'>
+                    <div key={key} className='flex flex-col md:w-96 w-[80%] py-4 md:gap-6 gap-5'>
                       <span className='bg-white rounded-full flex justify-center items-center p-4 w-16'>
                         <img src={item.img} alt="-" className='' />
                       </span>
