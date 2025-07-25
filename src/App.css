@@ -7,5 +7,7 @@ h1,h2,h3,h4,h5,h6, button, a{
 *{
   font-family: "Fira Code", monospace;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  /* border: greenyellow 1px solid; */
 }
 
