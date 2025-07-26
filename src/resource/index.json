@@ -74,7 +74,8 @@
         {
             "img" : "icons/linkedin.svg",
             "slogan" : "Find Me -",
-            "content" : "https://www.linkedin.com/in/riki-ulir-niam"
+            "content" : "https://www.linkedin.com/in/riki-ulir-niam",
+            "direct" : "https://www.linkedin.com/in/riki-ulir-niam"
         }
 
 
