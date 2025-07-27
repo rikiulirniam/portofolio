@@ -17,15 +17,15 @@ function useWindowSize() {
   return size
 }
 
-function useAxios(){
-  const token = Cookies.get("token")
-  return axios.create({
-    baseURL : "http://localhost:3000",
-    headers : {
-      Authorization : "Bearer " + token
-    }
-  })
-}
+// function useAxios(){
+//   const token = Cookies.get("token")
+//   return axios.create({
+//     baseURL : "http://localhost:3000",
+//     headers : {
+//       Authorization : "Bearer " + token
+//     }
+//   })
+// }
 
 export default useWindowSize;
 
