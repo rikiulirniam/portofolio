@@ -26,12 +26,7 @@ function Public(){
     setProjects(res.data)
   }
 
-    const handleDelete = async (id: number) => {
-    await axios.delete(`http://localhost:8080/projects/${id}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    })
-    fetchProjects()
-  }
+   
 
   useEffect(() => {
     fetchProjects()
