@@ -1,14 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "../resource/index.json"
 import Stack from '../Stack/Stack';
 import useWindowSize from '../resource/Provider';
 import TechStack from '../components/TechStack';
+import type { Project } from '../components/ProjectForm'
+import axios from "axios";
+
+interface Projects extends Project {
+    created_at: string
+}
 
 function Public(){
      const [width] = useWindowSize();
   const cardWidth = width < 768 ? 300 : 500
   const cardHeight = width < 768 ? 200 : 350
   
+  const [projects, setProjects] = useState<Projects[]>([])
+
+  const token = localStorage.getItem('token')
+
+  const fetchProjects = async () => {
+    const res = await axios.get<Projects[]>('http://localhost:8080/projects', {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    setProjects(res.data)
+  }
+
+    const handleDelete = async (id: number) => {
+    await axios.delete(`http://localhost:8080/projects/${id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    fetchProjects()
+  }
+
+  useEffect(() => {
+    fetchProjects()
+  }, [])
 
   return (
     <React.Fragment>
@@ -74,6 +101,31 @@ function Public(){
               </div>
               ))}
             </div>
+          </section>
+          <section className="flex justify-center flex-col items-center bg-[#ffffff] pb-12 ">
+            <h1 className="text-5xl p-6 underline font-bold">
+                Projects
+            </h1>
+            {projects.map((p) => (
+            <div key={p.id} className="bg-white shadow-md rounded-xl max-w-96 overflow-hidden">
+                {p.image && (
+                <img
+                    src={`http://localhost:8080/img/${p.image}`}
+                    alt={p.name}
+                    className="h-48 w-full object-cover"
+                />
+                )}
+                <div className="p-4">
+                <h2 className="text-xl font-bold">{p.name}</h2>
+                <p className="text-gray-600 mb-4">{p.tech}</p>
+                <p className="text-gray-500 text-sm mb-4">{p.description}</p>
+                <div className="flex justify-end items-center">
+                    <span className="text-xs text-gray-400">{new Date(p.created_at).toLocaleDateString()}</span>
+                    
+                </div>
+                </div>
+            </div>
+            ))}
           </section>
           <section id='contactme' className='flex justify-center max-w-screen flex-col items-center bg-[#ffffff] text-black'>
               <figure className=' max-w-screen md:w-[90%] w-screen md:h-[500px] flex flex-col justify-end bg-[#a09d90] p-12'>
