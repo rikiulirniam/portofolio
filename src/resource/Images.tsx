@@ -5,6 +5,11 @@ import postgresqlIcon from '../assets/icons/postgresql.svg'
 import gmailIcon from '../assets/icons/gmail.svg'
 import whatsappIcon from '../assets/icons/whatsapp.svg'
 import linkedinIcon from '../assets/icons/linkedin.svg'
+import githubIcon from '../assets/icons/github.svg'
+import nodeJsIcon from '../assets/icons/nodejs.svg'
+import mongoDbIcon from '../assets/icons/mongodb.svg'
+import mysqlIcon from '../assets/icons/mysql.svg'
+
 import aboutme2 from '../assets/aboutme/aboutme2.jpg'
 import aboutme3 from '../assets/aboutme/aboutme3.jpg'
 import aboutme2Jpeg from '../assets/aboutme/aboutme2.jpeg'
@@ -17,6 +22,10 @@ export const iconMap: Record<string, string> = {
     gmail: gmailIcon,
     whatsapp: whatsappIcon,
     linkedin: linkedinIcon,
+    github: githubIcon,
+    nodejs: nodeJsIcon,
+    mongodb: mongoDbIcon,
+    mysql: mysqlIcon
 }
 
 export const imageMap: Record<string, string> = {

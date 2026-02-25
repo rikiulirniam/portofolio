@@ -1,27 +1,15 @@
 {
     "nama" : "Riki Ulir Niam",
     "nama_panggilan" : "Riki",
-    "teknologi" : [
-        {
-            "name" : "Laravel",
-            "icon" : "laravel",
-            "text" : "Membuat Web Application menggunakan Blade atau membuat RestAPI dengan Sanctum."
-        },
-        {
-            "name" : "Express",
-            "icon" : "express",
-            "text" : "Membuat RestAPI dengan perfoma yang lebih cepat dan mengikuti lingkungan Node.Js."
-        },
-        {
-            "name" : "React",
-            "icon" : "react",
-            "text" : "Membangun antarmuka dinamis dan interaktif untuk pengalaman pengguna yang lebih efisien dari sisi frontend."
-        },
-        {
-            "name" : "PostgreSQL",
-            "icon" : "postgresql",
-            "text" : "Mengelola data relasional dan query kompleks dengan performa yang lebih cepat."
-        }
+    "teknologi": [
+    {"name": "Laravel", "icon": "laravel"},
+    {"name": "Express", "icon": "express"},
+    {"name": "React", "icon": "react"},
+    {"name": "Node.js", "icon": "nodejs"},
+    {"name": "PostgreSQL", "icon": "postgresql"},
+    {"name": "MySQL", "icon": "mysql"},
+    {"name": "MongoDB", "icon": "mongodb"},
+    {"name": "Git/Github", "icon": "github"}
     ],
     "images" : [
         {"id" : 2 , "img" : "aboutme2"},
