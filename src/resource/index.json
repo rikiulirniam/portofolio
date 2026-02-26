@@ -9,7 +9,7 @@
     {"name": "PostgreSQL", "icon": "postgresql"},
     {"name": "MySQL", "icon": "mysql"},
     {"name": "MongoDB", "icon": "mongodb"},
-    {"name": "Git/Github", "icon": "github"}
+    {"name": "Git/Github", "icon": "git"}
     ],
     "images" : [
         {"id" : 2 , "img" : "aboutme2"},
