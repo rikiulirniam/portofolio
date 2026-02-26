@@ -5,7 +5,7 @@ import postgresqlIcon from '../assets/icons/postgresql.svg'
 import gmailIcon from '../assets/icons/gmail.svg'
 import whatsappIcon from '../assets/icons/whatsapp.svg'
 import linkedinIcon from '../assets/icons/linkedin.svg'
-import githubIcon from '../assets/icons/github.svg'
+import gitIcon from '../assets/icons/git.svg'
 import nodeJsIcon from '../assets/icons/nodejs.svg'
 import mongoDbIcon from '../assets/icons/mongodb.svg'
 import mysqlIcon from '../assets/icons/mysql.svg'
@@ -22,7 +22,7 @@ export const iconMap: Record<string, string> = {
     gmail: gmailIcon,
     whatsapp: whatsappIcon,
     linkedin: linkedinIcon,
-    github: githubIcon,
+    git: gitIcon,
     nodejs: nodeJsIcon,
     mongodb: mongoDbIcon,
     mysql: mysqlIcon
